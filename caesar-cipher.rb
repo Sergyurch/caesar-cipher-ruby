@@ -6,7 +6,7 @@ def caesar_cipher(string, shift)
   def make_new_letter(letter)
     current_index = $alphabet.index(letter.downcase)
     if $shift > 0 
-      if current_index + $shift > 26
+      if current_index + $shift > 25
         new_index = 0 + $shift - (26 - current_index)
       else
         new_index = current_index + $shift
